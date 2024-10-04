@@ -5,21 +5,21 @@ class Pigg < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.4.0/pigg-aarch64-apple-darwin.tar.xz"
-      sha256 "05998275c9c314b3e4b6ce5206aa5e353d64019e4da16fe841936c9e753d0308"
+      sha256 "e861dc9d7f8b388459e0d8c36da42b5ef1df9fec314e4772b70435f29dd5f760"
     end
     if Hardware::CPU.intel?
       url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.4.0/pigg-x86_64-apple-darwin.tar.xz"
-      sha256 "b16a135b5100fcf6d1114c459f9dd85c9a8e474b96c2d17dedf3e4b93dbc484a"
+      sha256 "02b0e2d333385fd7fea7109b60c355a82bea959635b08974b4766acae92f6376"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.4.0/pigg-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "07d6681ac8df794bdea79efa25b7ae13ea7638d8841a99bc2214daa6ad015b54"
+      sha256 "a789832c70bce5451327688d75017f4f93b4822029104bd0c7a1ec7f01248aa8"
     end
     if Hardware::CPU.intel?
       url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.4.0/pigg-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "82a256752a6667daf3fbf6a47609b704cc73e424b5199a500dd2a25870948e96"
+      sha256 "da1befbfe3f704788d91a7e34701646ffa4569bdcd40e8984d5b732462a0e64c"
     end
   end
   license "Apache-2.0"
