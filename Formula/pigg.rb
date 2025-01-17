@@ -1,25 +1,25 @@
 class Pigg < Formula
   desc "A Graphical User Interface for interacting with local and remote Raspberry Pi and Pi Pico Hardware"
   homepage "https://github.com/andrewdavidmackenzie/pigg/"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.5.0/pigg-aarch64-apple-darwin.tar.xz"
-      sha256 "ea1677f689de453607c74ce7bd78a2374a879c3a5a5a87cd228f213fb3f3865e"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.6.0/pigg-aarch64-apple-darwin.tar.xz"
+      sha256 "6c65b1b062c7109f96f65f6def785341bdd113be968f86c478d0281d5d5d278a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.5.0/pigg-x86_64-apple-darwin.tar.xz"
-      sha256 "cb0561d8531e21f917c5445a37b5366e97e2eba521881a78283bce5e0f9e7d03"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.6.0/pigg-x86_64-apple-darwin.tar.xz"
+      sha256 "f547abde4e6fb62b84ef19f31268e60ba339acc240e9ef4524e670cf6dcb57bb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.5.0/pigg-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "44c796efd539cfe01943d13098bbf3322bec1608f20185e3f087b8ffb59fbc1c"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.6.0/pigg-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "03de53ed7cb2f921729f026743ab453d0b34ef42d4f985154b57872db4d32677"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.5.0/pigg-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3854932274abca138b2bf5671abcf5a4c824ecd18e45bee32939ec43f153e521"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.6.0/pigg-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "304496b8814f03b4ec532d969d4e8a7b6788624aec60f3e432d62fbb34057d5e"
     end
   end
   license "Apache-2.0"
