@@ -1,25 +1,25 @@
 class Piggui < Formula
   desc "A Graphical User Interface for interacting with local and remote Raspberry Pi and Pi Pico Hardware"
   homepage "https://github.com/andrewdavidmackenzie/pigg/"
-  version "0.7.0"
+  version "0.7.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.0/piggui-aarch64-apple-darwin.tar.xz"
-      sha256 "f37814ddbce64a9c8ca544ff403c4bb81eb32b35f178a73b65485c5f60b5e6bd"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.2/piggui-aarch64-apple-darwin.tar.xz"
+      sha256 "2eae4baa6c10b94d360530be09d7382fcbbf475367a1d39b2cb7677dd1ff6ffe"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.0/piggui-x86_64-apple-darwin.tar.xz"
-      sha256 "b63a55021151f173ee4138a45e86a3b9a58415955ca75b75f54106fda078847e"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.2/piggui-x86_64-apple-darwin.tar.xz"
+      sha256 "37dffbc77347456c8c7974d7457c8c772b480093a6c8a79e1b876981e45dd96f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.0/piggui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "154873fd476007e1655e9ed0072ee0d00e12e7656585e032bc0b4ed417365440"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.2/piggui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "182bc568f685389f2c026f168c18f38e4ba53826e5d5b03589134b223ad69015"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.0/piggui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b18e88f9e06434d00aec32954b0cb7fbb4b1aa5e0e7bd6d97aab2203879606d4"
+      url "https://github.com/andrewdavidmackenzie/pigg/releases/download/0.7.2/piggui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a6a4cfa780b967a9b893c0d75e6f22fce4565846e9757ac81e83a2ae8e330f4f"
     end
   end
   license "Apache-2.0"
